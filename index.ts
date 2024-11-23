@@ -1,5 +1,9 @@
-console.log('welcome');
+const email: HTMLElement | null = document.getElementById('email')
+const password = document.querySelector('address')
 
-type Student = string | number
-const firstname: string = 'uche'
-console.log(firstname);
+
+function login(email: string, password?: string) {
+    return `Your email address is ${email} and password is ${password?.toUpperCase()}`
+}
+
+console.log(login('uchedotphp@gmail.com', '@#$@$@$@$'));
